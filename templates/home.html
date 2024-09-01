@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <H1>{{name}}</H1>
+    {% include 'navbar.html' %}
     <div style="margin: 50px 50px 0px 50px;">
         {% for job in jobs %}
         {% include 'job.html' %}
