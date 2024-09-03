@@ -11,7 +11,9 @@
 
 <body>
     {% include 'navbar.html' %}
-    <div style="margin: 50px 50px 0px 50px;">
+  <h1 style="text-align: center; margin-top: 4px;">Welcome</h1>
+  <h3 style="color: turquoise; margin-left: 30px;">Job Openings:</h3>
+    <div style="margin: 20px 50px 0px 50px;">
         {% for job in jobs %}
         {% include 'job.html' %}
         {%endfor%}
@@ -19,15 +21,16 @@
     <h1>Get a Life Buddy</h1>
     <div class="row">
       <div class="col-6">
-        <img src="/static/goat.jpeg" width="700px">
+        <img src="/static/goat.jpeg" width=50%">
       </div>
     </div>
     <h3>About Me</h3>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores officia atque et ratione provident officiis.
         Voluptatibus ipsa expedita consectetur excepturi neque eius dicta. Alias, tenetur iusto vitae recusandae commodi
         voluptates?</p>
-    <button><a href="https://www.instagram.com/_sj04">Contact me</a></button>
-
+  <div class="text-center">  
+  <button class="btn btn-info">Contact me</a></button></div>
+{%include 'footer.html' %}
 </body>
 
 </html>
